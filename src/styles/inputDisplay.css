@@ -1,0 +1,18 @@
+.display {
+    font-size: 3.5rem;
+    text-align: end;
+    width: 260px;
+    padding-right: 18px;
+    height: 66px;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    background: #505050;
+    border: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+    &:focus {
+      outline: none;
+    }
+  }

@@ -1,0 +1,19 @@
+@import url("./styles/calcButtons.css");
+@import url("./styles/themeButtons.css");
+@import url("./styles//inputDisplay.css");
+
+.calculator {
+  width: 280px;
+  height: 400px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  box-shadow:
+    0 10px 0 50px rgba(143, 143, 143, 0.03),
+    0px 12px 20px 12px rgba(122, 122, 122, 0.5);
+  background: #505050;
+  margin: 100px auto;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+}
+

@@ -1,0 +1,36 @@
+.theme {
+    margin: 8px 8px 0px 8px;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .round {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    user-select: none;
+  
+    &:hover {
+      filter: brightness(150%);
+    }
+    &:active {
+      filter: brightness(90%);
+    }
+  }
+  
+  .round.red {
+    background-color: #ff5f52;
+    border-radius: 50%;
+  }
+  
+  .round.yellow {
+    background-color: #f3ba25;
+    border-radius: 50%;
+  }
+  
+  .round.green {
+    background-color: #26c938;
+    border-radius: 50%;
+  }
+
+  
