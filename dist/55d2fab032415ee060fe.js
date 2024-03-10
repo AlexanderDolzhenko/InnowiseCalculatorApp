@@ -5,8 +5,8 @@ import {
   clearCalculator,
   toggleSign,
   calculatePercentage,
-} from "./modules/functions.js";
-import { handleThemeClick } from "./modules/setupTheme.js";
+} from "../src/modules/functions.js";
+import { handleThemeClick } from "./src/modules/setupTheme.js";
 document.addEventListener("DOMContentLoaded", function () {
   handleThemeClick(),
     document.querySelectorAll(".button").forEach((e) => {
