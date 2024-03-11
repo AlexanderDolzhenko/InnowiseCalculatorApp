@@ -8,6 +8,7 @@
     "start": "webpack --mode development --watch",
     "lint": "eslint .",
     "build": "webpack --config webpack.config.js",
+    "deploy": "gh-pages -d dist",
     "precommit": "npm run lint"
   },
   "keywords": [],

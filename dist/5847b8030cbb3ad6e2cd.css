@@ -1,6 +1,6 @@
-@import url("../src/styles/calcButtons.css");
-@import url("../src/styles/themeButtons.css");
-@import url("../src/styles/inputDisplay.css");
+@import url("./styles/calcButtons.css");
+@import url("./styles/themeButtons.css");
+@import url("./styles//inputDisplay.css");
 
 .calculator {
   width: 280px;
