@@ -20,6 +20,8 @@ node server.js;</li>
 http://localhost:3000.</li>
 </ul>
 
+P.S. Webpack is also installed, bild compiled with two files and webpack server runs, but styles and js logic are not working correctly.
+
 <h2>Project Structure</h2>
 <ul>
   <li>"modules" folder contains destructured JS files, which are imported in index.js;</li>
