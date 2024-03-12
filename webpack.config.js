@@ -10,10 +10,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/,
-        use: ["html-loader"],
-      },
-      {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
@@ -36,6 +32,8 @@ module.exports = {
         collapseWhitespace: true,
         removeComments: true,
       },
+      filename: "index.html",
+      inject: "body",
     }),
   ],
   mode: "development",
@@ -49,7 +47,7 @@ module.exports = {
     hot: true,
     port: 8080,
     headers: {
-      "Content-Type": "text/css",
+      "Content-Type": "text/html;charset=utf-8",
     },
   },
   optimization: {
