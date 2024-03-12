@@ -16,8 +16,6 @@ cd InnowiseCalculatorApp;</li>
 npm install;</li>
   <li>Start the local server:
 node server.js;</li>
-  <li>Start the application:
-npm start;</li>
   <li>Open your browser and go to:
 http://localhost:3000.</li>
 </ul>
