@@ -40,14 +40,14 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     static: {
-      directory: path.resolve(__dirname, "./dist"),
+      directory: path.resolve(__dirname, "./src"),
     },
     open: true,
     compress: true,
     hot: true,
     port: 8080,
     headers: {
-      "Content-Type": "text/html;charset=utf-8",
+      "Content-Type": "text/html",
     },
   },
   optimization: {
