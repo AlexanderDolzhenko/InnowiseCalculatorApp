@@ -13,6 +13,20 @@ module.exports = {
         test: /\.html$/,
         use: ["html-loader"],
       },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
     ],
   },
   plugins: [
@@ -24,8 +38,21 @@ module.exports = {
       },
     }),
   ],
+  mode: "development",
+  devServer: {
+    historyApiFallback: true,
+    static: {
+      directory: path.resolve(__dirname, "./dist"),
+    },
+    open: true,
+    compress: true,
+    hot: true,
+    port: 8080,
+    headers: {
+      "Content-Type": "text/css",
+    },
+  },
   optimization: {
     minimize: true,
   },
-  mode: "production",
 };
